@@ -40,7 +40,7 @@ if ~noload
     if isScript
         % Load results in calling workspace
         loadStr = ['load(''' loadPath ''')'];
-        evalin('caller', loadStr) % TODO: This needs to work 2 levels up???
+        evalin('caller', loadStr) 
     else
         % Pass result to calling function (can't use varargout since that
         % automatically converts cell arrays into multiple variables)
